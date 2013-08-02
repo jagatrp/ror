@@ -34,7 +34,10 @@ end
 
 group :test do
 	gem 'rspec-rails'
+	gem 'copybara'
 end
+
+gem 'devise'
 
 group :production do
 	gem 'pg'
