@@ -34,7 +34,8 @@ end
 
 group :test do
 	gem 'rspec-rails'
-	gem 'copybara'
+	gem 'capybara'
+	gem 'launchy'
 end
 
 gem 'devise'
