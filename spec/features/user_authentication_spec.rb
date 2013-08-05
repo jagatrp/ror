@@ -4,9 +4,9 @@ require_relative '../spec_helper'
 describe "User Authentication" do
 	it "signup user" do
 		visit '/users/sign_up'
-		fill_in 'Email', with: 'prajapatijagat2009@gmail.com'
-		fill_in 'Password', with: 'seckret'
-                fill_in 'Password confirmation', with: 'seckret'
+		fill_in 'Email', with: 'jagatram82@hotmail.com'
+		fill_in 'Password', with: 'jagat'
+                fill_in 'Password confirmation', with: 'jagat'
                 #save_and_open_page
 		click_button 'Sign up'
 		#save_and_open_page
