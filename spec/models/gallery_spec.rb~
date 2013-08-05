@@ -1,0 +1,7 @@
+require_relative '../spec_helper'
+
+
+describe Album do
+	if "title cannot be blank" do
+	end
+end
