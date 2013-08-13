@@ -47,7 +47,7 @@ end
 
 gem 'devise'
 gem 'carrierwave'
-#gem 'rmagick'
+gem 'rmagick'
 
 group :production do
 	gem 'pg'
