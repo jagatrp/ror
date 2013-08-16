@@ -8,6 +8,6 @@ class SupportsController < ApplicationController
 	end
 	def create
 		SupportMailer.notify(params[:support]).deliver
-		
+		redirect_to new_support_path, notice: 'We will contact you asap.'
 	end
 end
