@@ -1,4 +1,5 @@
 Gallery::Application.routes.draw do
+  resources 'supports'
   get "photo/new"
   get "photo/create"
   devise_for :users
