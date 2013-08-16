@@ -1,0 +1,24 @@
+
+<h1>Listing photos from album: <%=@album.title %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Caption</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @photo.each do |photo| %>
+      <tr>
+        <td><%= image_tag(photo.photo_url(:thumb), :class => "img_preview") %></td>
+        <td><%= photo.caption %></td>
+        <td><%= photo.description %></td>
+        <td><%= link_to 'Edit', edit_album_photo_path(@album,photo) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
