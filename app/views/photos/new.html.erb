@@ -1,6 +1,16 @@
 <h1>Add photo for: <%=@album.title %></h1>
 
-<%= form_for([@album, @photo]) do |f| %>
+<%= simple_form_for([@album, @photo]) do |f| %>
+		
+	<%= f.input :caption, placeholders: 'Please enter caption' %>
+	<%= f.input :description, hint: 'At least 10 words' %>
+	<%= f.association :categories, as: :check_boxes %>
+	<%= f.input :photo %>
+	<%= f.input :rating, collection: 1..10, include_blank: false %>
+	<%= f.button :submit %>
+
+
+<!-- 
 	<p><%= f.label :caption %> <br>
 		<%= f.text_field :caption %>
 	</p>
@@ -17,5 +27,6 @@
 		<%= f.file_field :photo %>
 	</p>
 
-	<p class="button"><%= f.submit %></p>
+	<p class="button"><%= f.submit %></p> -->
+
 <% end %>

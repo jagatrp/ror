@@ -50,6 +50,9 @@ gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
 
+gem 'simple_form'
+gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails'
+
 group :production do
 	gem 'pg'
 end
