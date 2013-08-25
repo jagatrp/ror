@@ -51,7 +51,11 @@ gem 'carrierwave'
 gem 'rmagick'
 
 gem 'simple_form'
+
+#asset Pipeline
+gem 'therubyracer'
 gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails'
+gem 'less-rails'
 
 group :production do
 	gem 'pg'

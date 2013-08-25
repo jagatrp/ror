@@ -1,4 +1,6 @@
 Gallery::Application.routes.draw do
+  resources :comments
+
   resources 'supports'
   get "photo/new"
   get "photo/create"
