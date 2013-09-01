@@ -60,6 +60,8 @@ gem 'sidekiq'
 gem 'sinatra'
 gem 'slim'
 
+gem 'rack-google-analytics'
+
 group :production do
 	gem 'pg'
 end
