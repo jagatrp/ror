@@ -1,0 +1,9 @@
+# sample configuration file for sidekiq.
+# options here can still be overridden by cmd line args.
+# sidekiq -C config.yml
+---
+:verbose: true
+:concurrency: 5
+:queues:
+  - [high, 7]
+  - [alb_mailer, 5]
